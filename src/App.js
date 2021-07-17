@@ -3,8 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import React from 'react';
-import HPLogo from './pngwing.com.png';
-
+import Carrousel from './carrousel/carrousel';
 
 function App() {
 
@@ -37,10 +36,9 @@ return (
     <Container>
       <div>
         <div>
-          <img src={HPLogo} className="mx-auto d-block"></img>
+          <Carrousel /> 
         </div>
-      <div
-       style={
+      <div style={
         {
           paddingTop:"10px",
           display:"flex",
@@ -70,7 +68,7 @@ return (
 }
       <Row>
         <Col>
-          <div
+        <div
             style={
               {
                 paddingTop:"10px",
@@ -78,11 +76,11 @@ return (
                 flexDirection:"column",
                 alignItems:"center",
               }}>
-            <button type="button" className="btn btn-outline-primary"
+            <button type="button" className="btn btn-dark"
             onClick={consultarAPI}>
               Character of the day!!!
             </button>
-          </div>
+        </div>
         </Col>
       </Row>
       </div>

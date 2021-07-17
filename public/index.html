@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    
+    <!-- Traemos el modelo de la nav bar de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Aca llamamos al logo de la pestaña-->
     <link rel="icon" href="reliquias.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -11,23 +16,40 @@
     />
     <link rel="manifest" href="manifest.json" />
     <title>H.P. Daily Cards</title>
+    
   </head>
   <body>
+    <!-- La musica que va a sonar durante la navegacion-->
     <embed src="HPSong.mp3" autostart="true" loop="true" volume="75" width="0" height="0">
+      
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <nav class="navbar navbar-inverse navbar-expand-sm navbar-dark bg-dark">
+    <!--aca comienza nuestra nav-bar-->
+    <nav class="navbar navbar-inverse navbar-expand-sm navbar-dark bg-dark sticky-top mt-0">
       <a class="navbar-brand" href="index.html">
         <img src="reliquias.png" width="30" height="30" class="d-inline-block align-top" alt="Harry Potter Fan Site">
         Welcome Stranger
       </a>
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="https://www.blogdepelis.to/peliculas-harry-potter">Saga Films</a>
-        <a class="nav-item nav-link disabled" href="harry_potter-5867.jar">Coming Next Magic</a>
+        <a class="nav-item nav-link" href="./cards.html">Coming Next Magic</a>
         <a class="nav-item nav-link" href="https://www.warnerbros.co.uk/brands/wizarding-world">Official Wizard World</a>
         <a class="nav-item nav-link" href="https://www.jkrowling.com/">Master Witch</a>
       </div>
     </nav>
+    <!--aca termina la nav-bar-->
+    
     <div id="root"></div>
+    
+    <!--le ponemos un footer-->
+    <footer>
+      <div className="container-fluid bg-light text-center p-3">
+        <p className="small">&copy; Todos los derechos e izquierdos reservados :: SebaBranda <p>
+      </div>
+
+    </footer>
+
+    <!--aca esta nuestro estilo para el carrousel traido de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
 </html>
