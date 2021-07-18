@@ -129,7 +129,14 @@ return (
         </div>
         </Col>
       </Row>
-      <Row>
+      <Row style={
+        {
+          paddingTop:"10px",
+          display:"flex",
+          flexDirection:"row",
+          width:"100%"
+        }
+      }>
         
         {favoritos.map((personajes) => (
         

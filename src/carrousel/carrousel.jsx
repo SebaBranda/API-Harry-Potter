@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../hpLogo.png"
-import Castillo from "../castillo.png"
+import Castillo from "../castillo.jpg"
 import Versus from "../versus.png"
 
 const Carrousel = () => {
