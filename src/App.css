@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
-  color: rgb(158, 64, 1);
+  color: rgb(2, 0, 0);
   background-image: url(https://images3.alphacoders.com/205/205895.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -12,6 +12,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+footer {
+
+  height: 25px;
+  background-color: #530202;
+}
+
 
 .card {
   font-size: 1em;
@@ -59,9 +66,4 @@ body {
   color: rgb(83, 82, 82);
   border-top: 1px solid rgb(77, 76, 76) !important;
   background: rgb(61, 0, 0);
-}
-.footer {
-  height: 100px;
-  background-color: #000000;
-  color: aliceblue;
 }
