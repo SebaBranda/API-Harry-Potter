@@ -106,7 +106,7 @@ return (
                       <span><i className=""></i>Power: {personajes.patronus}</span>
                     </div>
                   </div>
-          </div>
+        </div>
 }
       <Row>
         <Col>
@@ -115,7 +115,7 @@ return (
               {
                 paddingTop:"10px",
                 display:"flex",
-                margin: "13px",
+                margin: "16px",
               }}>
             <button type="button" className="btn btn-dark"
               onClick={consultarAPI}>
@@ -126,11 +126,11 @@ return (
               onClick={()=> agregarFavoritosArray(personajes)}>
               Save to favorite
             </button>
-            
         </div>
         </Col>
       </Row>
       <Row>
+        
         {favoritos.map((personajes) => (
         
         <div className="col-sm-6 col-md-4 col-lg-3 mt-4">
@@ -152,16 +152,15 @@ return (
               </div>
         </div>))
         }
-
       </Row>
       <Row>
         <div>
         <button type="button" className="btn btn-danger"
               onClick={()=> borrarFavoritosArray()}>
               Delete favorites
-            </button>
-            <br></br>
+        </button>
         </div>
+        <p></p>
       </Row>
       </div>
     </div>
